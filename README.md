@@ -1,5 +1,5 @@
 👑⚛️ Aplicação React com Pages e React Router DOM
-Projeto Acadêmico – Arquitetura Front-end e Navegação SPA
+Projeto Acadêmico Arquitetura Front-end e Navegação SPA
 
 Este projeto acadêmico foi desenvolvido com o objetivo de aplicar uma arquitetura front-end escalável em React, utilizando o conceito de Pages, componentização e navegação SPA (Single Page Application) com React Router DOM 🧭.
 
