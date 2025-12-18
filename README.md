@@ -1,43 +1,39 @@
-Este projeto acadêmico tem como objetivo estruturar uma aplicação React utilizando o conceito de Pages e navegação entre páginas (SPA) com React Router DOM, aplicando boas práticas de organização, modularidade e escalabilidade no desenvolvimento front-end.
+👑⚛️ Aplicação React com Pages e React Router DOM
+Projeto Acadêmico – Arquitetura Front-end e Navegação SPA
 
-A aplicação foi desenvolvida seguindo uma arquitetura clara, com separação de responsabilidades e foco em manutenibilidade, servindo como base para projetos React de pequeno e médio porte.
+Este projeto acadêmico foi desenvolvido com o objetivo de aplicar uma arquitetura front-end escalável em React, utilizando o conceito de Pages, componentização e navegação SPA (Single Page Application) com React Router DOM 🧭.
 
-🎯 Objetivos do Projeto
+A aplicação foi construída seguindo boas práticas de organização de código, separação de responsabilidades e integração entre UI/UX Design e desenvolvimento front-end 🎨💻.
 
-Estruturar a aplicação no conceito de Pages, organizadas em src/pages
+🎯 Objetivos Técnicos
 
-Criar as páginas principais:
+🧩 Estruturar a aplicação utilizando o conceito de Pages
 
-Home – conteúdo principal da aplicação
+🗂️ Organizar as páginas em src/pages, promovendo escalabilidade
 
-Watch – página de visualização de conteúdo
+🧭 Implementar navegação SPA com react-router-dom
 
-Implementar navegação SPA (Single Page Application) utilizando react-router-dom
+🔗 Substituir navegação tradicional (<a>) por <Link>, evitando reloads
 
-Refatorar componentes para utilizar o componente <Link> no lugar de tags HTML <a>
+🧠 Centralizar o gerenciamento de rotas em src/routes.js
 
-Centralizar o gerenciamento de rotas no arquivo src/routes.js, facilitando a manutenção e escalabilidade do projeto
+🎨 Garantir consistência visual com CSS Modules
 
-🛠️ Tecnologias Utilizadas
+🧼 Manter um código limpo, legível e de fácil manutenção
 
-React.js – biblioteca principal para construção da interface
+🛠️ Stack Tecnológica
+Tecnologia	Descrição
+⚛️ React.js	Biblioteca principal para construção da interface
+🧭 React Router DOM	Gerenciamento de rotas e navegação entre páginas
+📜 JavaScript (ES6+)	Lógica, eventos e manipulação de estado
+🎨 CSS Modules	Estilização modular, evitando conflitos globais
+🖌️ Figma	Design system, wireframes e prototipagem
+💻 VS Code	Ambiente de desenvolvimento
+🎨 Processo de Design (UI/UX)
 
-React Router DOM – gerenciamento de rotas e navegação entre páginas
+Antes da implementação em código, o projeto passou por uma etapa completa de planejamento visual no Figma, seguindo princípios de UI/UX Design:
 
-JavaScript (ES6+)
-
-CSS Modules – estilização modular e escopada
-
-Figma – design de interface e prototipagem
-
-VS Code – ambiente de desenvolvimento
-
-🎨 Processo de Desenvolvimento
-🔹 Design no Figma
-
-Antes da implementação em código, o projeto foi planejado no Figma, seguindo um fluxo de design estruturado:
-
-Criação do guia de estilo, com definição de:
+🎯 Guia de Estilo
 
 Paleta de cores
 
@@ -45,39 +41,96 @@ Tipografia
 
 Assets visuais
 
-Desenvolvimento do wireframe para estruturação da interface
+🧱 Wireframe
 
-Montagem da interface visual final, garantindo consistência antes da codificação
+Estruturação da hierarquia visual
 
-🔹 Implementação no Código
+Organização dos componentes de interface
 
-Com o design definido, foi iniciada a etapa de desenvolvimento:
+🖥️ Interface Final
 
-Organização da estrutura de diretórios e componentes
+Layout final pronto para implementação
 
-Criação das páginas Home e Watch
+Consistência visual entre páginas
 
-Configuração das rotas utilizando:
+Essa abordagem reduziu retrabalho e garantiu maior fidelidade entre design e código.
 
-BrowserRouter
+⚙️ Arquitetura da Aplicação
 
-Routes
+A aplicação foi organizada com foco em escalabilidade e separação de responsabilidades:
 
-Route
-
-Aplicação dos estilos com CSS Modules, garantindo escopo e organização do CSS
-
-📁 Estrutura do Projeto (Resumo)
 src/
-├── components/
-├── pages/
+├── components/        # Componentes reutilizáveis
+├── pages/             # Páginas da aplicação
 │   ├── Home/
+│   │   ├── index.jsx
+│   │   └── Home.module.css
 │   └── Watch/
-├── routes.js
-├── App.js
-└── index.js
+│       ├── index.jsx
+│       └── Watch.module.css
+├── routes.js          # Centralização das rotas
+├── App.js             # Componente raiz
+└── index.js           # Ponto de entrada
 
-🚀 Considerações Finais
 
-Este projeto representa uma base sólida para aplicações React com navegação entre páginas, unindo planejamento visual (UI/UX) e boas práticas de desenvolvimento front-end.
-Ele pode ser facilmente expandido com novas páginas, funcionalidades e integrações.
+📌 Destaques arquiteturais:
+
+Rotas desacopladas do App.js
+
+Estilos escopados por página
+
+Componentes reutilizáveis e organizados
+
+Estrutura preparada para crescimento do projeto
+
+🔎 Funcionalidades Implementadas
+
+🧭 Navegação entre páginas sem recarregamento
+
+🎬 Página Watch dedicada à visualização de conteúdo
+
+🔎 Barra de busca interativa:
+
+Aceita valores de 1 a 6
+
+Filtra e exibe integrantes conforme o valor digitado
+
+🧹 Botão de limpar busca, melhorando a experiência do usuário
+
+🚀 Como Executar o Projeto
+# Instalar as dependências
+npm install
+
+# Executar o projeto
+npm start
+
+
+A aplicação será executada em http://localhost:3000.
+
+📚 Aprendizados e Conceitos Aplicados
+
+Arquitetura SPA com React
+
+Organização de projetos front-end
+
+React Router DOM na prática
+
+Componentização e reutilização
+
+Integração entre design e desenvolvimento
+
+Boas práticas de UI/UX
+
+🏁 Considerações Finais
+
+Este projeto representa uma base sólida para aplicações React modernas, combinando planejamento visual, arquitetura front-end e boas práticas de desenvolvimento ⚛️✨.
+
+Ele pode ser facilmente expandido com:
+
+Novas páginas
+
+Integração com APIs
+
+Gerenciamento de estado global
+
+Autenticação e controle de rotas
